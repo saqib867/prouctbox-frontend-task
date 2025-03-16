@@ -15,9 +15,9 @@ app.use(cors());
 
 app.use(express.static(path.join(__dirname, 'static')));
 
-// Use routes
+
 app.use('/api', itemRoutes);
 
 app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
+  console.log(`Server is running on ${PORT}`);
 });
